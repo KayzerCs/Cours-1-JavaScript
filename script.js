@@ -78,6 +78,55 @@ total++;
 total += 5;
 total -= 4;
 total *= 3;
-total/= 2;
+total /= 2;
 
 console.log(total);
+
+// *********************************** LES STRUCTURES DE CONTROLE *********************************** //
+let x = 8;
+let y = 2;
+
+// "if" le mot clé a dire pour faire une comparaison.
+// On peut le faire comme sa "if (x > y) alert ("Yes x plus gros que y");" mais la plus pard du temps il est fait avec des {}.
+
+// if (x > y) {
+//   alert("Yes x plus gros que y");
+// } else if (y > x) {
+//   alert("Y plus grand !");
+// } else {
+//   alert("Il sont égaux");
+// }
+
+// On test si la variable es "true".
+if (x) {
+    console.log("X, éxiste");
+}
+
+// === teste l'égalité en Type et Valeur.
+// let x = 2;
+// let y = 2;
+if (x === y) {
+    // console.log("ils son égaux");
+} else {
+    // console.log("pas égaux");
+}
+
+// == teste l'égalité Valeur, sans prendre en compte le Type.
+// let x = "8";
+// let y = 2;
+if (x == y) {
+    // console.log("ils son égaux");
+} else {
+    // console.log("pas égaux");
+}
+
+//  ( || ) = ou
+//  ( && ) = et
+// Soit l'un soit l'autres.
+if ( x < y || x > 1) {
+    // console.log("UI");
+} 
+// && il faut que toutes les conditions soit réunis.
+if ( x < y && x > 1) {
+    // console.log("UI");
+} 

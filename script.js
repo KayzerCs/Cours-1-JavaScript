@@ -99,34 +99,55 @@ let y = 2;
 
 // On test si la variable es "true".
 if (x) {
-    console.log("X, éxiste");
+  console.log("X, éxiste");
 }
 
 // === teste l'égalité en Type et Valeur.
 // let x = 2;
 // let y = 2;
 if (x === y) {
-    // console.log("ils son égaux");
+  // console.log("ils son égaux");
 } else {
-    // console.log("pas égaux");
+  // console.log("pas égaux");
 }
 
 // == teste l'égalité Valeur, sans prendre en compte le Type.
 // let x = "8";
 // let y = 2;
 if (x == y) {
-    // console.log("ils son égaux");
+  // console.log("ils son égaux");
 } else {
-    // console.log("pas égaux");
+  // console.log("pas égaux");
 }
 
 //  ( || ) = ou
 //  ( && ) = et
 // Soit l'un soit l'autres.
-if ( x < y || x > 1) {
-    // console.log("UI");
-} 
+if (x < y || x > 1) {
+  // console.log("UI");
+}
 // && il faut que toutes les conditions soit réunis.
-if ( x < y && x > 1) {
-    // console.log("UI");
-} 
+if (x < y && x > 1) {
+  // console.log("UI");
+}
+
+// *********************************** LES FONCTIONS *********************************** //
+
+// Fonction classique (à l'ancienne).
+function faireQuelqueChose() {
+  console.log("je fais un truc");
+  console.log(5 + 5);
+  alert("Calcule terminé");
+}
+// Il faut impérativement nomé la fonction pour qu'elle se joue.
+faireQuelqueChose();
+
+// Fonction flêchée.
+
+const addition = (a, b) => {
+  console.log(a + b);
+};
+
+addition(10, 10);
+addition(100, 100);
+addition(963852741, 123456789);

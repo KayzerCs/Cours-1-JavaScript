@@ -151,3 +151,24 @@ const addition = (a, b) => {
 addition(10, 10);
 addition(100, 100);
 addition(963852741, 123456789);
+
+
+// *********************************** La Portée Des Variables *********************************** //
+
+function add2 () {
+    // Tu peut créé une variable, à l'interieur de ta fonction. Mais elle sera seulement reconnue a l'interieure de la fonction.
+    let num = 4;
+    console.log(num +2);
+}
+add2();
+
+
+// Return : Il est important de noter que dès qu'une instruction "return" est exécutée dans une fonction, celle-ci quitte immédiatement la fonction, et le code qui suit cette instruction ne sera pas exécuté. De plus, si aucune valeur n'est spécifiée avec "return" ou si "return" est utilisé sans argument, la fonction renverra undefined par défaut.
+function additionner(a, b) {
+    var somme = a + b;
+    return somme;
+}
+
+var resultat = additionner(10, 10);
+
+console.log(resultat);
